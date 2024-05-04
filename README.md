@@ -9,10 +9,10 @@
 * Github
 
 - ***Clientes***
--  listar
--  comprar
--  ver carrinho
--  finalizar compra
+  -  listar
+  -  comprar
+  -  ver carrinho
+  -  finalizar compra
 
 
 - ***Supermercado***
