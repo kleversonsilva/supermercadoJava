@@ -46,15 +46,3 @@ Como este é um projeto de API, ele não possui uma interface gráfica direta. P
 3.  **Configure as dependências do projeto:**
 4.  **Execute o projeto:** Inicie o servidor da sua aplicação Java.
    
-## Endpoints da API (Exemplo)
-
-#Exemplo ilustração
-
-| Método | Endpoint         | Descrição                                                                 | Request Body (Exemplo)                                                                    | Response (Exemplo)                                                                                                                  |
-| :----- | :--------------- | :-------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| POST   | `/produtos`      | Cadastra um novo produto.                                                      | `{ "nome": "Arroz", "preco": 5.00, "quantidade": 100 }`                                     | `{ "id": 123, "nome": "Arroz", "preco": 5.00, "quantidade": 100 }`                                                                  |
-| GET    | `/produtos`      | Lista todos os produtos.                                                        | Nenhum                                                                                    | `[ { "id": 123, "nome": "Arroz", "preco": 5.00 }, { "id": 456, "nome": "Feijão", "preco": 3.50 } ]`                                      |
-| DELETE | `/produtos/{id}` | Remove um produto pelo ID.                                                      | Nenhum                                                                                    | `{ "message": "Produto removido com sucesso" }` ou código de status 204 (No Content)                                                     |
-| POST   | `/clientes/{id}/carrinho` | Adiciona um produto ao carrinho do cliente. | `{ "produtoId": 123, "quantidade": 2 }` | `{"produtos": [{"id": 123, "nome": "Arroz", "preco": 5.00, "quantidade": 2}], "total": 10.00}` |
-| POST   | `/clientes/{id}/comprar` | Finaliza a compra do cliente. | Nenhum | `{ "message": "Compra finalizada com sucesso", "id_venda": 1 }` |
-
